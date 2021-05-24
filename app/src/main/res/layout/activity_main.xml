@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="0pt"
+    android:layout_weight="1"
+    android:layout_marginTop="40dp"
+    android:layout_marginBottom="30dp"
+    android:id="@+id/create"
+    android:onClick="create"
+    android:text="Создать новую заметку"/>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="0pt"
+    android:layout_weight="1"
+    android:layout_marginBottom="30dp"
+    android:text="Открыть заметку"
+    android:onClick="list"/>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="0pt"
+    android:layout_weight="1"
+    android:text="Таймер"
+    android:onClick="timer"
+    android:layout_marginBottom="40dp"
+
+    />
+</LinearLayout>

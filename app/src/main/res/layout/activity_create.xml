@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CreateActivity">
+    <TextView
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="0pt"
+        android:layout_weight="0.5"
+        android:text="Название:"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0pt"
+        android:layout_weight="1"
+        android:text=" "
+        android:id="@+id/name"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0pt"
+        android:layout_weight="0.5"
+        android:text="Длительность эксперимента:"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0pt"
+        android:layout_weight="1"
+        android:text=" "
+        android:id="@+id/time"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0pt"
+        android:layout_weight="0.5"
+        android:text="Температура (градусы Цельсия):"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0pt"
+        android:layout_weight="1"
+        android:text="0"
+        android:inputType="number"
+        android:id="@+id/temp"
+         />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0pt"
+        android:layout_weight="0.5"
+        android:text="Влажность (%):"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0pt"
+        android:layout_weight="1"
+        android:text="0"
+        android:inputType="number"
+        android:id="@+id/wat"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0pt"
+        android:layout_weight="0.5"
+        android:text="Содержание углекислого газа (%):"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0pt"
+        android:layout_weight="1"
+        android:text="0"
+        android:inputType="number"
+        android:id="@+id/co2"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0pt"
+        android:layout_weight="0.5"
+        android:text="Содержание кислорода (%):"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0pt"
+        android:layout_weight="1"
+        android:id="@+id/O2"
+        android:inputType="number"
+        android:text="0"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0pt"
+        android:layout_weight="0.5"
+        android:text="Питательные вещества:"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0pt"
+        android:layout_weight="1"
+        android:text=" "
+        android:id="@+id/food"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0pt"
+        android:layout_weight="0.5"
+        android:text="Дополнительные параметры:"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0pt"
+        android:layout_weight="1"
+        android:text=" "
+        android:id="@+id/dop"
+        android:layout_marginBottom="60dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0pt"
+        android:layout_weight="1"
+        android:text="Создать проект"
+        android:onClick="prcreate"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0pt"
+        android:layout_weight="1"
+        android:text="Назад"
+        android:onClick="back"/>
+</LinearLayout>

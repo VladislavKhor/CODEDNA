@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+
+    tools:context=".ViewActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0pt"
+        android:layout_weight="0.5"
+        android:textSize="15dp"
+        android:text="Название:"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="0pt"
+            android:layout_marginRight="30dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:textSize="20dp"
+            android:text="" />
+
+        <Button
+            android:id="@+id/btnname"
+            android:layout_width="0pt"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="btnname"
+            android:textSize="10dp"
+
+            android:text="изменить" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0pt"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        >
+    <TextView
+        android:layout_width="0pt"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginRight="20dp"
+        android:textSize="15dp"
+
+        android:text="Время:"
+        />
+    <TextView
+
+        android:layout_width="0pt"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="Тепмпература"
+        android:textSize="15dp"
+
+        />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginRight="15dp"
+            android:layout_width="0pt"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/time"
+            android:hint="Время:"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_width="0pt"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/temp"
+            android:textSize="20dp"
+            android:hint="Температура:"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0pt"
+        android:layout_weight="0.5"
+        >
+        <TextView
+            android:layout_width="0pt"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:textSize="15dp"
+
+            android:text="Влажность:"
+            />
+        <TextView
+
+            android:layout_width="0pt"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Углекислый газ"
+            android:textSize="15dp"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="10dp"
+
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0pt"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/wat"
+            android:textSize="20dp"
+            android:layout_marginRight="15dp"
+            android:hint="Влажность:"
+            />
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_width="0pt"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:id="@+id/co2"
+            android:hint="Углексилый газ:"
+            />
+        </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0pt"
+        android:layout_weight="0.5"
+        android:textSize="15dp"
+        android:text="Кислород:"
+/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+    <EditText
+        android:layout_width="0pt"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:textSize="20dp"
+        android:layout_marginRight="30dp"
+        android:inputType="number"
+        android:id="@+id/o2"
+        />
+    <Button
+        android:layout_width="0pt"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:onClick="btno2"
+        android:textSize="10dp"
+        android:id="@+id/btno2"
+        android:text="изменить"
+
+        />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0pt"
+        android:layout_weight="0.5"
+        android:textSize="15dp"
+        android:text="Питательная среда:"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:orientation="horizontal">
+    <EditText
+        android:layout_marginRight="30dp"
+        android:layout_width="0pt"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:textSize="20dp"
+        android:id="@+id/food"
+        />
+    <Button
+        android:layout_width="0pt"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:onClick="btnfood"
+        android:id="@+id/btnfood"
+        android:textSize="10dp"
+        android:text="изменить"
+
+        />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0pt"
+        android:layout_weight="0.5"
+        android:textSize="15dp"
+        android:text="Дополнительные факторы:"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:orientation="horizontal">
+    <EditText
+
+        android:layout_width="0pt"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:textSize="20dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/dop"
+        />
+    <Button
+        android:layout_width="0pt"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:textSize="10dp"
+        android:onClick="btndop"
+        android:id="@+id/btndop"
+        android:text="изменить"
+
+        />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0pt"
+        android:layout_weight="0.5"
+        android:textSize="15dp"
+        android:text="КОЕ:"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0pt"
+        android:layout_weight="1"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:layout_width="0pt"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/etinf"
+            android:textSize="20dp"
+            android:inputType="numberDecimal"
+            android:layout_marginRight="20dp"
+            />
+        <Button
+            android:layout_width="0pt"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="btninf"
+            android:textSize="10dp"
+            android:text="Добавить данные"
+            />
+    </LinearLayout>
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/graph" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0pt"
+        android:layout_weight="1"
+        android:text="Редактировать данные по КОЕ"
+        android:layout_marginBottom="10dp"
+        android:onClick="info"
+        android:textSize="10dp"
+        />
+    <Button
+        android:layout_marginBottom="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="0pt"
+        android:layout_weight="1"
+        android:text="Назад в меню"
+        android:textSize="15dp"
+        android:onClick="back"
+        />
+</LinearLayout>
